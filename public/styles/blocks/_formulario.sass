@@ -1,0 +1,65 @@
+.formulario
+    margin-top: 4%
+
+    &__imagen
+        display: none
+
+    &__formulario
+        width: 100%
+        border: 1px solid $gray2
+        border-radius: 5px
+        padding: 2em 2em 0 2em
+        box-shadow: 5px 5px 0px 0px $primary3
+    
+    &__titulo
+        font-size: 20px
+        margin-bottom: 2em        
+
+    &__grupo
+        margin-bottom: 1em
+        padding-bottom: 1em
+    
+    &__input
+        width: 100% 
+        margin-top: 0.7em
+        height: 2em
+        border: 1px solid $gray2
+        border-radius: 5px
+        padding-left: 1em
+    
+    &__boton
+        background-color: $primary2
+        color: $white
+        border: 1px solid $primary2
+        height: 3em
+        width: 6em
+        border-radius: 5px
+        padding-bottom: 0
+
+    &__labelCheck
+        margin-left: 2em;
+        font-size: 16px;
+
+    &__formularioOculto
+        display: none;
+        width: 100%
+        border: 1px solid green
+        border-radius: 5px
+        padding: 2em 2em 0 2em
+
+    &__ocultar
+        display: none
+    &__ver
+        display: block 
+        padding: 1em
+
+    &__gracias
+        margin-bottom: 0.5em
+        font-weight: bold
+        font-size: 2em
+
+    @media screen and ( min-width: 700px )
+        &__imagen
+            display: block
+            text-align: center     
+            width: 100%

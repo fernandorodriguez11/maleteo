@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        {% endblock %}
+        <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/style.css">
+    </head>
+    <body>
+    
+        <div class="wrapper">
+
+            <div class="container-fluid">
+                <!-- De momento cabecera-->
+                <header class="cabecera">
+                    <img class="cabecera__logo" src="/imagenes/logo.svg" alt="logo maleteo">
+                </header>
+            {% block body %}{% endblock %}
+            </div>
+        </div>
+
+    {% block javascripts %}
+    {% endblock %}
+        <!--pie de pagina-->
+        <footer class="pie">
+            <div class="pie__contenido">
+                <img class="pie__imagen" src="/imagenes/logo2.svg" alt="logo de maleteo">
+                <p>Hecho con &#128147; en Madrid</p>  
+            </div>
+        </footer>
+
+    </body>
+</html>

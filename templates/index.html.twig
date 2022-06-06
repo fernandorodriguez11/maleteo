@@ -1,0 +1,221 @@
+{% extends 'base.html.twig' %}
+{% block title %} Inicio {% endblock %}
+{% block body %}
+    <!-- Para introduccion-->
+    <div class="row">
+        <div class="introduccion">
+            <div class="col-md-6 col-xs-12 transparente">
+                <div class="introduccion__texto">
+                    <h1>Gana dinero guardando equipaje a viajeros como tú</h1>
+                </div>
+                <div class="introduccion__imagenes">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img class="introduccion__app" src="imagenes/app-store.svg" alt="botón para acceder a app store">
+                        </div>
+                        <div class="col-xs-6">
+                            <img class="introduccion__play" src="imagenes/google-play.svg" alt="botón para acceder a google play">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Numeritos-->
+
+    <div class="how-works">
+
+        <h2 class="how-works__title">¿Cómo funciona?</h2>
+
+        <ul class="row how-works__lista">
+            <li class="how-works__item col-xs-12 col-md-4">
+                <div class="row">
+                    <div class="col-xs-2 col-md-12">
+                        <p class="circulo how-works__numerito">1</p>
+                    </div>
+                    <div class="col-xs-10 col-md-12"">
+                        <p class="heading-3 how-works__subtitle">Date de alta</p>
+                        <p>
+                            Una olla de algo más vaca que carnero, salpicón las más noches,
+                            duelos y quebrantos los sábados.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="how-works__item col-xs-12 col-md-4">
+                <div class="row">
+                    <div class="col-xs-2 col-md-12">
+                        <div class="circulo how-works__numerito">2</div>
+                    </div>
+                    <div class="col-xs-10 col-md-12"">
+                        <p class="heading-3 how-works__subtitle ">Publica tus espacios, horarios y tarifas</p>
+                        <p>
+                            En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha
+                            mucho tiempo.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="how-works__item col-xs-12 col-md-4">
+                <div class="row">
+                    <div class="col-xs-2 col-md-12">
+                        <p class="circulo how-works__numerito">3</p>
+                    </div>
+                    <div class="col-xs-10 col-md-12">
+                        <p class="heading-3 how-works__subtitle ">Recibe viajeros y gana dinero </p>
+                        <p>
+                            No ha mucho tiempo que vivía un hidalgo  de los de lanza en el astillero
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Formularios-->
+    <div class="formulario">
+        <div class="row">
+            <div class="formulario__imagen col-md-6">
+                <img src="imagenes/iPhoneX.png">
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <div id="visible" class="formulario__formulario">
+                    <p class="formulario__titulo">Solicita una demo</p>
+                    <!-- 'action': path('insertar'),-->
+                    {{ form_start(formulario, {'action': path('insertar'), method:"post",attr:{id:"formulario"}}) }}
+                    
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.nombre, {label:"Nombre",attr:{'class':"formulario__input",placeholder:'Vicent Chase'}})}}
+                    </div>
+
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.email, {label:"Email",attr:{'class':"formulario__input",placeholder:'VicentChase@gmail.com'}})}}
+                    </div>
+
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.horario, {label:"Horario Preferido",attr:{'class':"formulario__input",placeholder:'.EJ: mañana'}})}}
+                    </div>
+
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.ciudad, {label:"Ciudad",attr:{'class':"formulario__input"}})}}
+                    </div>
+
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.politica_privacidad, {label:"He leído y acepto la política de privacidad",attr:{'class':"formulario__labelCheck"}})}}
+                    </div>
+
+                    <div class="formulario__grupo">
+                        {{form_row(formulario.enviar, {attr:{'class':"formulario__boton"}})}}
+                    </div>
+
+                    {{ form_end(formulario) }}
+                </div>
+                <div id="oculto" class="formulario__formularioOculto">
+                    <p class="formulario__gracias">¡Gracias!</p>
+                    <p> Tu formulario ha sido enviado correctamente, pronto serás un guardian de maleteo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio Secciones-->
+
+    <div class="criticas">
+        <div class="criticas__titulo">
+            <p>Opiniones de otros guardianes</p>
+        </div>
+
+        <div class="row">
+        <!--<input  id="prueba" value='{comentarios}'>-->
+        {% for criticas in comentarios %}
+            <div class="col-md-4 col-xs-12 pruebas">
+                <section class="criticas__guardianes">
+                    <p id="coment">{{criticas.comentario}}</p>
+                </section>
+                <div class="criticas__usuario">
+                
+                    <div class="criticas__guardaImagen">
+                        <img id="img" src={{criticas.imagen}} class="criticas__imagenes">
+                    </div>
+
+                    <div class="criticas__lugar">
+                        <p id="autor" class="criticas__autor">{{criticas.autor}}</p>
+                        <p id="lugar" class="criticas__sitio">{{criticas.lugar}}</p>
+                    </div>
+                
+                    
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+
+<!--
+        <div class="row">
+        <input  id="prueba" value='{comentarios}'>
+        
+            <div class="col-md-4 col-xs-12">
+                <section class="criticas__guardianes">
+                    <p id="coment1"></p>
+                </section>
+                <div class="criticas__usuario">
+                
+                    <div class="criticas__guardaImagen">
+                        <img id="img1" class="criticas__imagenes">
+                    </div>
+
+                    <div class="criticas__lugar">
+                        <p id="autor1" class="criticas__autor"></p>
+                        <p id="lugar1" class="criticas__sitio"></p>
+                    </div>
+                
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>-->
+
+    <!--Fin críticas-->
+
+    <!--Mapa para encontrar guardianes-->
+    <div class="mapa">
+        <div class="mapa__titulo">
+            <p>Guardianes cerca tuyo</p>
+        </div>
+        <div class="mapa__mapa">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="mapa" class="mapa__content"></div>
+                </div>
+                <div class="col-md-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.74804981012!2d-3.6968836846027986!3d40.45871307936029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229036539b84b%3A0xe9147f67419c2744!2sCalle%20de%20Orense%2C%2069%2C%2028020%20Madrid!5e0!3m2!1ses!2ses!4v1575301727392!5m2!1ses!2ses" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- 
+    <div class="carousel">
+        <button id="retroceder">Retroceder</button>
+        <div id="imagen"></div>
+        <button id="avanzar">Avanzar</button>
+    </div>
+    <div class="controles">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+    </div>
+
+-->
+
+{% endblock %}
+
+{% block javascripts %}
+    <!--<script src="/js/carousel.js"></script>-->
+    <script src="/js/formulario.js"></script>
+    <script src="/js/guardianes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/squirrelly@7.5.0/dist/squirrelly.min.js"></script>
+{% endblock %}
+

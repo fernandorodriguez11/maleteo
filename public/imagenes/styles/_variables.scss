@@ -1,0 +1,33 @@
+$gray1:rgb(227, 226, 226);
+$gray2:rgb(185, 184, 183);
+$gray3:(143, 142, 140);
+$gray4:rgb(102, 100, 98);
+$gray5:rgb(75, 73, 72);
+$gray6:rgb(47, 46, 45);
+$white:rgb(255, 255, 255);
+$primary1:rgb(255, 206, 50);
+$primary2:rgb(249, 165, 25);
+$gradient-1: linear-gradient(180deg, $primary1 0%, $primary2 100%);
+$gradient-1-h: $white;
+$primary3:rgb(240, 144, 0);
+$transparency1:rgba(185, 184, 183, 0.7);
+$transparency2:rgba(47, 46, 45, 0.85);
+$danger:rgb(235, 87, 87);
+$secondary1:rgb(70, 201, 236);
+$secondary2:rgb(1, 181, 230);
+$secondary3:rgb(1, 132, 168);
+$valid:rgb(39, 174, 96);
+
+$font-family-base: 'Catamaran', sans-serif;
+$font-color-base: $gray5;
+$font-size-base: 16px;
+$line-height-base: 1.2em;
+
+$font-size-large: 20px;
+$line-height-large: 28px;
+
+$font-size-small: 13px;
+$line-height-small: 20px;
+
+$breakpoint-sm: 48em;
+$breakpoint-md: 62em;

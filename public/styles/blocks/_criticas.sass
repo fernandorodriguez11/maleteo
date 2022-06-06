@@ -1,0 +1,68 @@
+.criticas
+    margin-top: 3em
+
+    &__titulo
+        font-family: $font-family-base
+        line-height: 47px
+        font-size: 39px
+        margin-top: 2em
+        margin-bottom: 2em
+        text-align: left
+
+    &__guardianes
+        border: 1px solid $gray1
+        padding: 1em
+        border-radius: 5px
+        margin-bottom: 1em
+        text-align: justify
+        font-family: $font-family-base
+        font-size: 19px
+        position: relative
+
+    &__guardianes:before
+        border: 8px solid $gray1
+        content: ''
+        border-left-color: transparent
+        border-bottom-color: white
+        border-right-color: transparent
+        position: absolute
+        bottom: -16px
+    
+    &__guardianes:after
+        border: 7px solid white
+        content: ''
+        border-left-color: transparent
+        border-bottom-color: white
+        border-right-color: transparent
+        position: absolute
+        left: 20px
+        bottom: -14px
+    
+    &__usuario
+        margin-bottom: 1em
+
+    &__guardaImagen
+        float: left
+        margin-right: 5%
+
+    &__imagenes
+        border-radius: 50%
+    
+    &__lugar
+        padding: 5%
+
+    &__autor
+        font-family: $font-family-base
+        font-weight: bold
+        font-size: 20px
+
+    &__sitio
+        font-family: $font-family-base
+        font-size: 13px
+
+    @media screen and(min-width: $breakpoint-md)
+
+        &__titulo
+            text-align: center
+        &__guardianes
+            margin-right: 2em

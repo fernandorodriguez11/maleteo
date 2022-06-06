@@ -1,0 +1,32 @@
+.mapa
+    &__titulo
+        text-align: left
+        margin-bottom: 2em
+        margin-top: 1em
+        font-family: $font-family-base
+        line-height: 47px
+        font-size: 39px
+
+    &__guardianes
+        border-bottom: 1px solid $gray2
+        padding: 1em
+        &:last-child
+            border-bottom: 0
+
+    &__nombre
+        font-size: 1em
+        font-weight: bold
+        align-items: flex-start
+        margin-bottom: 1em
+
+    &__estrellas
+        font-size: 1.3em
+        color: $primary2
+        align-items: flex-start
+
+    &__size
+        font-size: 1em
+
+    @media screen and (min-width: $breakpoint-md)
+        &__titulo
+            text-align: center

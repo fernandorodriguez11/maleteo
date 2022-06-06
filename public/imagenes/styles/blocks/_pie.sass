@@ -1,0 +1,18 @@
+.pie
+    width: 100%
+    padding: 1em
+    background-color: $gray6
+    visibility: hidden
+
+    @media screen and (min-width: $breakpoint-md)
+        visibility: visible
+        
+        &__contenido
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: $white
+        
+        &__imagen
+            margin-bottom: 0.6em

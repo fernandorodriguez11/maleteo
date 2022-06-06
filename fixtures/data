@@ -1,0 +1,49 @@
+{
+  "peliculas": [
+    {
+      "titulo": "Alien",
+      "descripcion": "Tras acudir a una llamada de ayuda, la tripulación (Tom Skerritt, Sigourney Weaver, John Hurt) encuentra una voraz y horrible criatura abordo de una nave espacial.",
+      "año": 1979,
+      "duracion": 116,
+      "director": "Ridley Scott",
+      "imagen": "https://pics.filmaffinity.com/alien-747835256-mmed.jpg",
+      "actores": ["Sigourney Weaver", "John Hurt", "Yaphet Kotto"]
+    },
+    {
+      "titulo": "Amelie",
+      "descripcion": "El hallazgo de un tesoro olvidado pone a una camarera parisina a cuestionar, y alterar la vida de quienes la rodean.",
+      "año": 2001,
+      "duracion": 120,
+      "director": "Jean-Pierre Jeunet",
+      "imagen": "https://pics.filmaffinity.com/le_fabuleux_destin_d_amelie_poulain-848337470-mmed.jpg",
+      "actores": ["Audrey Tautou", "Mathieu Kassovitz"]
+    },
+    {
+      "titulo": "Los Vengadores",
+      "descripcion": "Cuando el hermano de Thor, Loki, logra acceder al poder ilimitado del Cubo Cósmico, Nick Fury, director de la agencia para mantener la paz internacional, inicia el reclutamiento de unos superhéroes para vencer una amenaza sin precedente contra la Tierra.",
+      "año": 2012,
+      "duracion": 135,
+      "director": "Joss Whedon",
+      "imagen": "https://pics.filmaffinity.com/the_avengers-439499921-mmed.jpg",
+      "actores": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Jeremy Renner", "Scarlett Johansson", "Tom Hiddleston", "Samuel L. Jackson"]
+    },
+    {
+      "titulo": "El Gran lebowski",
+      "descripcion": "Un desempleado es confundido por unos matones con el millonario Jeff Lebowski, quien se llama igual que él y a cuya esposa han secuestrado. Cuando acude a casa del millonario para quejarse, éste decide contratarlo para rescatar a su esposa a cambio de una recompensa.",
+      "año": 1998,
+      "duracion": 117,
+      "director": "Joel Coen",
+      "imagen": "https://pics.filmaffinity.com/the_big_lebowski-877217211-mmed.jpg",
+      "actores":["Jeff Bridges", "John Goodman", "Julianne Moore", "Steve Buscemi"]
+    },
+    {
+      "titulo": "Interstellar",
+      "descripcion": "Un grupo de exploradores hacen uso de un orificio recién descubierto para superar las limitaciones de los viajes espaciales humanos y conquistar las vastas distancias relacionadas con los viajes interestelares.",
+      "año": 2014,
+      "duracion": 169,
+      "director": "Christopher Nolan",
+      "imagen": "https://pics.filmaffinity.com/interstellar-366875261-mmed.jpg",
+      "actores": ["Matthew McConaughey", "Anne Hathaway", "David Gyasi"]
+    }
+  ]
+}

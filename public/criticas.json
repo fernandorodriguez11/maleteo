@@ -1,0 +1,34 @@
+{
+  "criticas": [
+    {
+      "comentario": "Tras el enorme éxito internacional de su primera colaboración, \"Bailar\", que ganó un galardon en los Premios",
+      "autor": "fernando Garnacho",
+      "lugar":"Tetuán, Madrid",
+      "imagen": "imagenes/deorro.jpg"
+    },
+    {
+      "comentario": "Tras el enorme éxito internacional de su primera colaboración, \"Bailar\", que ganó un galardon en los Premios",
+      "autor": "Maria Garnacho",
+      "lugar":"Tetuán, Madrid",
+      "imagen": "imagenes/deorro.jpg"
+    },
+    {
+      "comentario": "Tras el enorme éxito internacional de su primera colaboración, \"Bailar\", que ganó un galardon en los Premios",
+      "autor": "Luis Garnacho",
+      "lugar":"Tetuán, Madrid",
+      "imagen": "imagenes/deorro.jpg"
+    },
+    {
+      "comentario": "Hola el enorme éxito internacional de su primera colaboración, \"Bailar\", que ganó un galardon en los Premios",
+      "autor": "Sergio Garnacho",
+      "lugar":"Tetuán, Madrid",
+      "imagen": "imagenes/deorro.jpg"
+    },
+    {
+      "comentario": "Tras el enorme éxito internacional de su primera colaboración, \"Bailar\", que ganó un galardon en los Premios",
+      "autor": "Sergio Garnacho",
+      "lugar":"Tetuán, Madrid",
+      "imagen": "imagenes/deorro.jpg"
+    }
+  ]
+}
